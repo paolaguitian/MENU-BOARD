@@ -1,0 +1,28 @@
+.items-container {
+  display: flex;
+  justify-content: center;
+  /* TODO: FIX THIS MARGIN */
+  margin-top: 50px;
+}
+
+.items-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.no-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardImage {
+  width: 200px;
+  height: 200px;
+}
+
+.message {
+  color: #654321;
+  font-size: 30px;
+}

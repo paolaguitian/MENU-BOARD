@@ -14,6 +14,14 @@ const Navbar = (props) => {
 
   return (
     <div className="navbar">
+      <NavLink
+        className="tile"
+        to={`/`}
+        activeStyle={{ color: "#EE1D23" }}
+      >
+        <img className="icon" src="/images/logo.png" alt="BK" />
+        <div className="section">MENU</div>
+      </NavLink>
       {values.map(item => (
         <NavLink
           className="tile"
