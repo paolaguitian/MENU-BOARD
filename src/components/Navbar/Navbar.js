@@ -3,12 +3,6 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = (props) => {
-
-  //TODO move logic to parent
-  if (props.data === '') {
-    return 'loading';
-  }
-
   const { data } = props;
   const values = Object.values(data);
 
@@ -29,7 +23,7 @@ const Navbar = (props) => {
           to={`/${item.routeId}`}
           activeStyle={{ color: "#EE1D23" }}
         >
-          <img className="icon" src={`/images/${item.image}`} alt="" />
+          <img className="icon" src={`/images/${item.carouselImage}`} alt="" />
           <div className="section">{item.name}</div>
         </NavLink>
       ))

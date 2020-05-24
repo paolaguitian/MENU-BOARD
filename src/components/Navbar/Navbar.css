@@ -1,9 +1,9 @@
 .navbar {
-  background-color: #D3D3D3;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
+  background-color: #f9f7f2;
 }
 
 .tile {
@@ -12,8 +12,8 @@
   align-items: center;
   text-decoration: none;
   color: #654321;
+  margin-bottom: 10px;
 }
-
 
 .section {
   font-weight: bold;

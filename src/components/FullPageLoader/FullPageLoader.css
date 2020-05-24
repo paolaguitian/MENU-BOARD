@@ -1,7 +1,8 @@
 .load-screen {
   display: flex;
+  margin: 50px auto;
   flex-direction: column;
   align-items: center;
   color: #EE1D23;
-  font-size: 50px;
+  font-size: 30px;
 }

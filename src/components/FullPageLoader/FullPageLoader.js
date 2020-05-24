@@ -12,6 +12,7 @@ const FullPageLoader = () => {
       <Spin indicator={loadingIcon} />
        LET'S EAT
       <img className="icon" src="/images/logo.png" alt="BK" />
+
     </div>
   )
 }
