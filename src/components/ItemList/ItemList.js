@@ -32,7 +32,7 @@ const ItemList = (props) => {
       ))}
     </>
   )
-  console.log(values)
+
   return (
     <div className="items-container">
       {isEmpty(items) ? <NotAvailable message='NO ITEMS AVAILBALE AT THE MOMENT' /> : renderItems()}
