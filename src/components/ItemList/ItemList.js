@@ -1,22 +1,19 @@
 import React from 'react';
 import { useParams, NavLink } from 'react-router-dom';
+import isEmpty from 'lodash.isempty';
 import './ItemList.css';
 import 'antd/dist/antd.css';
-import isEmpty from 'lodash.isempty';
 import NotAvailable from '../NotAvailable/NotAvailable';
 
 const ItemList = (props) => {
-
   const { data } = props;
   const { category } = useParams();
   const items = category ? data[category].items : data;
   const values = Object.values(items);
 
-
   const renderItems = () => (
     <>
       {values.map(item => (
-
         <div className="parent" key={`card-${item.name}-link`}>
           <div className="child">
             <NavLink
